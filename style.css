@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0;
-}
+
 
 h2 {
     font-family: 'Aquarelle';
     font-size: 48px;
-    color: rgb(0, 88, 0);
+    color: #575b36;
 }
 
 h3 {
@@ -22,45 +17,57 @@ h3 {
 p {
     font-family: 'Roboto';
     font-size: large;
-    color: rgb(1, 99, 1);
+    color: black;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+body {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .main {
-    background-image: url(background_hq.jpg);
-    background-size: cover;
-    width: 1000px;
-    height: 650px;
-    margin: 100px auto;   
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 2px;
+        background-image: url(background_hq.jpg);
+        background-size: cover;
+        width: 1000px;
+        height: 650px;
+        margin: 100px auto;   
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 2px;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 85% 15%;
-    height: 650px;
     
+.grid-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 85% 15%;
+        height: 650px;
+        
 }
-
+    
 .data {
-    grid-column: 1/2;
+        grid-column: 1/2;
 }
-
+    
 .data p {
-    margin-left: 20px;
-    color: black;
-    font-family: 'Aquarelle';
-    font-size: 26px;
-    cursor: pointer;
+        margin-left: 20px;
+        color: black;
+        font-family: 'Aquarelle';
+        font-size: 32px;
+        cursor: pointer;
+}
+    
+.text-plan, .text-data, .text-road, .text-contact {
+        grid-column: 2 / 3;
+        text-align: center;
+        display: none;
 }
 
-.text-plan, .text-data, .text-road, .text-contact {
-    grid-column: 2 / 3;
-    text-align: center;
-    display: none;
-}
 
 .table-text li {
     list-style: none;
@@ -70,14 +77,13 @@ p {
     font-size: large;
 }
 
-
-
-.text-contact p {
-    color: black;
+.text-contact {
+    margin-left: 100px;
 }
 
+
 .footer {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 1 / 3 / 3;
     margin: 0 0 0 0;
     text-align: center;
 }
@@ -93,8 +99,15 @@ p {
     margin-right: 10px;
     color: black;
     font-family: 'Aquarelle';
-    font-size: 26px;
+    font-size: 32px;
     cursor: pointer;
+}
+
+}
+
+.text-contact p {
+    color: black;
+    
 }
 
 .footer ul li:hover, a:hover, .data p:hover {
@@ -125,9 +138,86 @@ a {
     color: green;
 }
 
-@media screen {
-    
+@media screen and (max-width: 1200px) {
+
+    body {
+        width: 100%;
+        background-image: url(wedding_mobile2.jpg);
+        max-width: 1200px;
+        height: 1050px;
+        margin: 0 auto;
+       
+    }
+
+    .main {
+        background-image: url(wedding_mobile2.jpg);
+        background-size: cover; 
+        max-width: 1200px;
+        width: 100%;
+        margin: 0; 
+          
+} 
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+    }
+
+    .text-contact, .text-data, .text-plan, .text-road {
+        margin: 0 auto;
+        width: 100%;
+        width: 600px;
+        font-family: 'Roboto';
+        font-size: large;
+    }
+
+    .text-contact {
+        padding: 0px 20px 20px 20px;
+        
+    }
+
+    .text-data, .text-contact {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul li {
+        margin-left: auto;
+        list-style: none;    
+        padding: 0 auto;
+    }
+
+    .footer {
+        display: none;
+    }
 }
+
+/* @media only screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        max-width: 768px;
+        height: 1000px;
+        background: url(wedding_mobile.jpg);
+        background-size: cover;
+        margin: 0 auto;
+        border: none
+    }
+    .grid-container {
+        display: none
+      
+        height: 1000px;
+        
+    }
+  
+    .footer ul {
+        display: inline;
+        margin-left: 50px;
+    }
+} */
 
 @font-face {
     font-family: "Aquarelle"; 
