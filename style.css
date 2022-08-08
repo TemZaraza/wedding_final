@@ -142,21 +142,15 @@ a {
 
     body {
         width: 100%;
-        background-image: url(wedding_mobile2.jpg);
-        max-width: 1200px;
+        background-image: url(mobilebg.jpg);
+        background-size: cover; 
+        max-width: fit-content;
         height: 1050px;
         margin: 0 auto;
        
     }
 
-    .main {
-        background-image: url(wedding_mobile2.jpg);
-        background-size: cover; 
-        max-width: 1200px;
-        width: 100%;
-        margin: 0; 
-          
-} 
+
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -166,8 +160,8 @@ a {
 
     .text-contact, .text-data, .text-plan, .text-road {
         margin: 0 auto;
-        width: 100%;
-        width: 600px;
+      
+        width: 500px;
         font-family: 'Roboto';
         font-size: large;
     }
