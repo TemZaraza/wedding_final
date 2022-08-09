@@ -16,13 +16,13 @@ h3 {
 
 p {
     font-family: 'Nexa';
-    font-size: 23px;
+    font-size: 25px;
     color: black;
 }
 
 .nx ul li {
     font-family: 'Nexa';
-    font-size: 23px;
+    font-size: 25px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -72,6 +72,10 @@ body {
         text-align: center;
         display: none;
        
+}
+
+.text-data h2 {
+    margin-bottom: 0px;
 }
 
 
