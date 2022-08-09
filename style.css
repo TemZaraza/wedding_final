@@ -15,12 +15,15 @@ h3 {
 }
 
 p {
-    font-family: 'Roboto';
-    font-size: large;
+    font-family: 'Nexa';
+    font-size: 23px;
     color: black;
 }
 
-
+.nx ul li {
+    font-family: 'Nexa';
+    font-size: 23px;
+}
 
 @media screen and (min-width: 1200px) {
 
@@ -47,9 +50,11 @@ body {
         grid-template-columns: 30% 70%;
         grid-template-rows: 85% 15%;
         height: 650px;
+        font-family: 'Nexa';
         
 }
-    
+
+ 
 .data {
         grid-column: 1/2;
 }
@@ -62,10 +67,11 @@ body {
         cursor: pointer;
 }
     
-.text-plan, .text-data, .text-road, .text-contact {
+.text-plan, .text-data, .text-road, .text-contact, .text-details {
         grid-column: 2 / 3;
         text-align: center;
         display: none;
+       
 }
 
 
@@ -81,6 +87,10 @@ body {
     margin-left: 100px;
 }
 
+.text-details img {
+    width: 450px;
+    margin-left: 50px;
+}
 
 .footer {
     grid-area: 2 / 1 / 3 / 3;
@@ -124,7 +134,7 @@ a {
 #Angelina {
     font-family: 'Aquarelle';
     text-decoration: none;
-    font-size: 26px;
+    font-size: 30px;
     color: black;
 }
 
@@ -152,26 +162,35 @@ a {
     .main {
        
         margin: 0px auto;
-        padding: 0 15px;
+        padding: 0 50px;
     }
 
     .grid-container {
         display: flex;
         flex-direction: column;
         align-content: center;
+    
         
     }
 
-    .text-contact, .text-data, .text-plan, .text-road {
+    .text-contact, .text-data, .text-plan, .text-road, .text-details {
         margin: 0 auto;
-      
-      
-        font-family: 'Roboto';
-        font-size: large;
+        font-family: 'Nexa';
+        font-size: 22px;
     }
 
+    /* .text-plan {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .text-road {
+        margin: 0 auto;
+        width: 600px;
+    } */
+
     .text-contact {
-        padding: 0px 20px 20px 20px;
+        padding: 0px 20px 40px 20px;
         
     }
 
@@ -179,8 +198,16 @@ a {
         text-align: center;
     }
 
+    .text-details img {
+         
+            width: 100%;
+            height: auto;
+        
+    }
+
     h2 {
         text-align: center;
+        line-height: 1;
     }
 
     ul li {
@@ -194,34 +221,22 @@ a {
     }
 }
 
-/* @media only screen and (max-width: 768px) {
-    .main {
-        width: 100%;
-        max-width: 768px;
-        height: 1000px;
-        background: url(wedding_mobile.jpg);
-        background-size: cover;
-        margin: 0 auto;
-        border: none
-    }
-    .grid-container {
-        display: none
-      
-        height: 1000px;
-        
-    }
-  
-    .footer ul {
-        display: inline;
-        margin-left: 50px;
-    }
-} */
-
 @font-face {
     font-family: "Aquarelle"; 
     src: url(Aquarelle.ttf);
     } 
-/* @font-face {
-    font-family: 'CorporateAPro-Medium';
-    src: url(fonts/CorporateAPro-Medium.ttf)
-}     */
+ /* @font-face {
+    font-family: 'Teddy-bear';
+    src: url(teddy-bear.ttf)
+}      */
+
+ 
+@font-face {
+    font-family: 'Nexa';
+    src: url(nexa-script-thin.ttf)
+}     
+
+@font-face {
+    font-family: 'Avdira';
+    src: url(avdira-italic.otf)
+}     
