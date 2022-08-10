@@ -26,6 +26,11 @@ p {
     font-size: 25px;
 }
 
+hr {
+    height: 1px;
+    background-color: black;
+}
+
 @media screen and (min-width: 1200px) {
 
 body {
@@ -127,6 +132,22 @@ body {
     cursor: pointer;
 }
 
+.AK {
+    display: flex;
+    margin-left: 150px;
+}
+
+.AK p {
+    margin-top: 20px;
+}
+
+.AK h2 {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+
 }
 
 .text-contact p {
@@ -161,6 +182,7 @@ a {
     width: 22px;
     color: green;
 }
+
 
 @media screen and (max-width: 1200px) {
 
@@ -209,6 +231,10 @@ a {
         
     }
 
+    .AK {
+        margin-top: 50px;
+    }
+
     h2 {
         text-align: center;
         line-height: 1.1;
@@ -220,6 +246,10 @@ a {
         padding: 0 auto;
     }
 
+    hr {
+        margin-top: 50px;
+    }
+
     .footer {
         display: none;
     }
@@ -229,11 +259,6 @@ a {
     font-family: "Aquarelle"; 
     src: url(Aquarelle.ttf);
     } 
- /* @font-face {
-    font-family: 'Teddy-bear';
-    src: url(teddy-bear.ttf)
-}      */
-
  
 @font-face {
     font-family: 'Nexa';
